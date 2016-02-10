@@ -1,0 +1,25 @@
+header
+  margin: 0
+    
+  .col-md-12
+    padding-top: 20px
+    width: 1160px
+    margin: 0 auto
+
+  .soc_network
+    float: right
+    width: 100px
+    display: inline-block
+
+    =sprite($position)
+      background: url('../img/sprite.png') no-repeat $position
+      width: 27px
+      height: 26px
+
+    .facebook
+      +sprite(0 0)
+
+    .google
+      +sprite(-50px 0)
+
+
