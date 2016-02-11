@@ -1,6 +1,6 @@
 .second
   margin-top: 25px
-
+  padding: 0 40px
   .container-fluid
 
     .row
@@ -126,8 +126,6 @@
       .goots
         border-right: 1px solid #d0d0d0
         border-left: 1px solid #d0d0d0
-        box-shadow: 0 6px 4px 0px rgba(116,116,116,0.86)
-
 
   .info-box
     padding-top: 35px
@@ -142,6 +140,9 @@
         width: 50%
         text-align: center
         float: left
+        &.price
+          line-height: 32px
+
         &.blue
           color: $blue
         .ttl
@@ -158,7 +159,7 @@
 
   .deliv-box
     @extend .info-box
-    padding-top: 38px
+    padding: 38px 10px 0
     .deliv-select
       display: inline-block
       width: 127px
@@ -198,26 +199,25 @@
       font-weight: bold
       color: #272d4b
 
-    .button_add
-      width: 50%
-      float: left
-      margin-top: 50px
-      margin-left: 20px
-
-      .btn
-        border-radius: 0px
-        max-width: 120px
-        background: #39219c
-        color: #fff
-
-    .button_buy
-      width: 50%
-
-      .btn
-        border-radius: 0px
-        max-width: 120px
-        background: #39219c
-        color: #fff
+    .buy_btn
+      max-width: 127px
+      background-color: #39219c
+      color: #fff
+      border: none
+      height: 35px
+      width: 100%
+      display: inline-block
+      padding-left: 10px
+      text-align: left
+      background-size: 20px
+      &.button_add
+        background-image: url("../img/cart.png")
+        background-repeat: no-repeat
+        background-position: 90% center
+      &.button_buy
+        background-image: url("../img/add.png")
+        background-repeat: no-repeat
+        background-position: 90% center
 
   .feedback
     padding: 25px 50px
@@ -226,7 +226,7 @@
     box-shadow: 0 6px 4px 0 rgba(116,116,116,0.86)
     margin-left: 0px
     margin-right: 0px
-
+    background: #fff
     .rewiew
       background: #aeaeae
       height: 3px
@@ -251,7 +251,6 @@
 
     img
       margin-top: 10px
-
     p
       font-weight: 400
       font-size: 12px
@@ -278,3 +277,15 @@
     padding-right: 15px
     padding-left: 15px
     text-align: justify
+
+
+.img-gallery
+  .main-img
+    img
+      width: 100%
+  .sel-img
+    .sm-gl-img
+      cursor: pointer
+      img
+        width: 100%
+
